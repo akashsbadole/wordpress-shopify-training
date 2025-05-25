@@ -216,14 +216,14 @@ const SyllabusSection: React.FC = () => {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <a 
             href="#pricing" 
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
             View Pricing Plans
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

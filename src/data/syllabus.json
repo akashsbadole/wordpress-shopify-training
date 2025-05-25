@@ -1,0 +1,130 @@
+{
+  "courses": {
+    "wordpress": {
+      "title": "WordPress Development",
+      "duration": "1 month",
+      "modules": [
+        {
+          "title": "Introduction to WordPress",
+          "topics": [
+            "WordPress Architecture",
+            "Installation and Setup",
+            "Dashboard Overview",
+            "Basic Configuration"
+          ]
+        },
+        {
+          "title": "Content Management",
+          "topics": [
+            "Posts and Pages",
+            "Media Management",
+            "Categories and Tags",
+            "Menus and Widgets"
+          ]
+        },
+        {
+          "title": "Theme Development",
+          "topics": [
+            "Theme Structure",
+            "Template Hierarchy",
+            "Custom Post Types",
+            "WordPress Loop"
+          ]
+        },
+        {
+          "title": "Plugin Development",
+          "topics": [
+            "Plugin Architecture",
+            "WordPress Hooks",
+            "Custom Plugins",
+            "Security Best Practices"
+          ]
+        }
+      ]
+    },
+    "shopify": {
+      "title": "Shopify Development",
+      "duration": "1 month",
+      "modules": [
+        {
+          "title": "Shopify Basics",
+          "topics": [
+            "Platform Overview",
+            "Store Setup",
+            "Product Management",
+            "Payment Gateway Integration"
+          ]
+        },
+        {
+          "title": "Theme Customization",
+          "topics": [
+            "Liquid Template Language",
+            "Theme Structure",
+            "Custom Sections",
+            "Theme Settings"
+          ]
+        },
+        {
+          "title": "App Development",
+          "topics": [
+            "Shopify API",
+            "App Bridge",
+            "Webhooks",
+            "Authentication"
+          ]
+        },
+        {
+          "title": "Advanced Features",
+          "topics": [
+            "Custom Checkout",
+            "Inventory Management",
+            "Analytics",
+            "Performance Optimization"
+          ]
+        }
+      ]
+    },
+    "webDevelopment": {
+      "title": "Web Development Fundamentals",
+      "duration": "1 month",
+      "modules": [
+        {
+          "title": "HTML5",
+          "topics": [
+            "Document Structure",
+            "Semantic Elements",
+            "Forms and Validation",
+            "Multimedia Elements"
+          ]
+        },
+        {
+          "title": "CSS3",
+          "topics": [
+            "Selectors and Properties",
+            "Flexbox and Grid",
+            "Responsive Design",
+            "Animations and Transitions"
+          ]
+        },
+        {
+          "title": "JavaScript",
+          "topics": [
+            "Core Concepts",
+            "DOM Manipulation",
+            "Events and Listeners",
+            "Async Programming"
+          ]
+        },
+        {
+          "title": "Modern Web Development",
+          "topics": [
+            "Version Control (Git)",
+            "Package Managers",
+            "Build Tools",
+            "Web APIs"
+          ]
+        }
+      ]
+    }
+  }
+} 

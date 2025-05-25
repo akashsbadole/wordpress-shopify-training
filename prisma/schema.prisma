@@ -1,0 +1,80 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model ContactSubmission {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model CourseEnrollment {
+  id         String   @id @default(cuid())
+  name       String
+  email      String
+  course     String
+  schedule   String   // "morning" or "evening"
+  startDate  DateTime
+  status     String   @default("pending") // pending, approved, rejected
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model SupportTicket {
+  id          String   @id @default(cuid())
+  userId      String
+  subject     String
+  description String
+  status      String   @default("open") // open, in-progress, resolved
+  priority    String   @default("medium") // low, medium, high
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  messages    SupportMessage[]
+}
+
+model SupportMessage {
+  id             String       @id @default(cuid())
+  ticketId       String
+  ticket         SupportTicket @relation(fields: [ticketId], references: [id])
+  senderId       String
+  message        String
+  createdAt      DateTime     @default(now())
+}
+
+model DemoBooking {
+  id                String   @id @default(cuid())
+  firstName         String
+  lastName          String
+  email            String
+  phone            String
+  courseName       String
+  courseType       String
+  specialRequirements String?
+  preferredDate    DateTime
+  preferredTime    String
+  meetLink         String?
+  status           String   @default("pending") // pending, confirmed, completed, cancelled
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model Course {
+  id          String   @id @default(cuid())
+  name        String
+  type        String
+  description String
+  price       Float
+  duration    String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+} 
